@@ -11,7 +11,7 @@
 
 ### Step 1: Clone this repository in any working folder and navigate to bookish-dollop folder. 
 
-![alt text](img/img/image.png)
+![alt text](img/image.png)
 
 ### Step 2: Open bookish-dollop in Visual studio code run `npm install` in the terminal 
 
@@ -83,17 +83,11 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 ## Step 8: Open one more termial in VS Code and run `npm run build`
 
 
-## Step 9: To add book MCP created into MCP server of VSCode by pressing ctrl+shift+p and type mcp
 
-![alt text](img/image-2.png)
+## Step 11: Press ctrl+shift+p, and then settings.json and then select "Open user settings"
+![alt text](img/image10.png)
 
-## Step 10: Select add command(stdio) and enter  books-mcp-server as name and then press enter 
-![alt text](img/image-3.png)
-## Step 11: Select Workspace settings, this will open mcp.json with configuration
-
-![alt text](img/image-4.png)
-
-## Step 12: Copy the below configuration in the mcp.json, 
+## Step 12: Copy the below configuration in settings.json, at the end before braces, 
 
 ```
   "mcp": {
@@ -122,7 +116,11 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 
 ## Step 8: Lets test github copilot by asking date
 
+![alt text](img/image11.png)
+
 ## Step 9: Change the mode from ask to Agent in github copilot
+
+![alt text](img/image12.png)
 
 ## Step 18: Ask for get all books(make sure localhost is still running)
 
