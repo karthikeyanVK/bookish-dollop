@@ -13,7 +13,7 @@
 
 ![alt text](img/image.png)
 
-## Step 2: Open bookish-dollop in Visual studio code run `npm install` in the terminal, in config.ts, update MONGO_URI as shown.
+## Step 2: Open bookish-dollop in Visual studio code run `npm install` in the terminal, in config.ts, update MONGO_URI as shown in https://airforshare.com/.
 
 ## Step 3: Run `nodemon' in the terminal
 
