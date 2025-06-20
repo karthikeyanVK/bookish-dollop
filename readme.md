@@ -13,13 +13,13 @@
 
 ![alt text](img/image.png)
 
-## Step 2: Open bookish-dollop in Visual studio code run `npm install` in the terminal, in config.ts, update MONGO_URI as shown in https://airforshare.com/.
+## Step 2: Open bookish-dollop in Visual studio code run `npm install` in the terminal, in config.ts, update MONGO_URI available in https://airforshare.com/.
 
 ## Step 3: Run `nodemon' in the terminal
 
 ## Step 4: Open new browser and navigate to http://localhost:12345/books/get/all , it should display results as below.
 
-![alt text](img/image.png)
+![alt text](img/image1.png)
 
 ## Step 5: Open index.ts & Copy below lines of code [ Initializing tools and server ]
 
@@ -50,7 +50,7 @@ const server = new Server({ name: 'book-api-mcp', version: '1.0.0' }, { capabili
 
 ```
 
-## Step 6: Copy below code to initialize the stdio server
+## Step 6: Copy below code to initialize the stdio server in  index.ts
 
 ``` 
 async function main() {
@@ -68,7 +68,7 @@ main();
 
 ```
 
-## Step 7: Copy below code that lists the tools that is part of our books 
+## Step 7: Copy below code that lists the tools that is part of our books in  index.ts
 
 ```
 // List all controller methods as MCP resources
@@ -122,13 +122,12 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 
 ![alt text](img/image12.png)
 
-## Step 16: Ask for get all books(make sure localhost is still running)
 
-## Step 17: You should discovered 2 tools. You can see that in output terminal.
+## Step 16: You should discovered 2 tools. You can see that in output terminal.
 
 ![alt text](img/image-6.png)
 
-## Now navigate to index.ts and add below code, so it can expose tools that needs to be used.
+## Step 17: Now navigate to index.ts and add below code, so it can expose tools that needs to be used.
 
 ```
 
