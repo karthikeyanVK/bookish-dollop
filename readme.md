@@ -1,4 +1,4 @@
-# MCP Book API Integration
+# Workshop: Book API MCP Integration
 
 ## Prerequisites - Installation
 
@@ -13,7 +13,7 @@
 
 ![alt text](img/image.png)
 
-### Step 2: Open bookish-dollop in Visual studio code run `npm install` in the terminal 
+## Step 2: Open bookish-dollop in Visual studio code run `npm install` in the terminal, in config.ts, update MONGO_URI as shown.
 
 ## Step 3: Run `nodemon' in the terminal
 
@@ -21,7 +21,7 @@
 
 ![alt text](img/image.png)
 
-## Step 5: Navigate to  index.ts & Copy below line of code for the mcp[Code for initializing tools and server]
+## Step 5: Open index.ts & Copy below lines of code [ Initializing tools and server ]
 
 
 ```
@@ -47,9 +47,10 @@ const tools = [
 ];
 // Server instance
 const server = new Server({ name: 'book-api-mcp', version: '1.0.0' }, { capabilities: { resources: {}, tools: {} } });
+
 ```
 
-Step 6: Copy below code to initialize the stdio server
+## Step 6: Copy below code to initialize the stdio server
 
 ``` 
 async function main() {
@@ -83,11 +84,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 ## Step 8: Open one more termial in VS Code and run `npm run build`
 
 
-
-## Step 11: Press ctrl+shift+p, and then settings.json and then select "Open user settings"
+## Step 9: Press ctrl+shift+p, and then settings.json and then select "Open user settings"
 ![alt text](img/image10.png)
 
-## Step 12: Copy the below configuration in settings.json, at the end before braces, 
+## Step 10: Copy the below configuration in settings.json, at the end before braces, 
 
 ```
   "mcp": {
@@ -103,32 +103,32 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
   }
 ```
 
-## Step 13: Navigate to your build/src folder in your VSCode of bookish-dollop and get the index.js path and update books-mcp-server args mcp.json
+## Step 11: Navigate to your build/src folder in your VSCode of bookish-dollop and get the index.js path and update books-mcp-server arg's mcp
 
-## Step 14: Click on the start button.
+## Step 12: Click on the start button.
 
 ![alt text](img/image-5.png)
 
-## Step 7: Install github co-pilot in visual studio code 
+## Step 13: Install github co-pilot in visual studio code 
 
 ![alt text](img/image-1.png)
 
 
-## Step 8: Lets test github copilot by asking date
+## Step 14: Lets test github copilot by asking date
 
 ![alt text](img/image11.png)
 
-## Step 9: Change the mode from ask to Agent in github copilot
+## Step 15: Change the mode from ask to Agent in github copilot
 
 ![alt text](img/image12.png)
 
-## Step 18: Ask for get all books(make sure localhost is still running)
+## Step 16: Ask for get all books(make sure localhost is still running)
 
-## Step 19: You should discovered 2 tools. You can see that in output terminal.
+## Step 17: You should discovered 2 tools. You can see that in output terminal.
 
 ![alt text](img/image-6.png)
 
-## Now navigate to index.ts and add tools that needs to be used.
+## Now navigate to index.ts and add below code, so it can expose tools that needs to be used.
 
 ```
 
@@ -208,9 +208,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
 ```
 
-## Step 20: Build the code by running `npm run build`
+## Step 20: Build the code by running `npm run build` in the terminal
 
-## Step 21: Click on restart
+## Step 21: Click on restart for restarting mcp server in settings.json
 
 ![alt text](img/image-7.png)
 
@@ -220,6 +220,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
 ![alt text](img/image-8.png)
 
-## you should see books listed, you can ask for book with id
+## Step 24: you should see books listed, you can ask for book with id
 
 ![alt text](img/image-9.png)
+
+## Step 24: Try asking the copilot on book with some id example 10
