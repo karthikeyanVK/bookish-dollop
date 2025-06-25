@@ -1,5 +1,24 @@
 # Workshop: Book API MCP Integration
 
+## 🎯 Objective
+
+The objective of this project is to integrate a simple Book API with the Model Context Protocol (MCP), enabling seamless interaction between API endpoints and AI tools like GitHub Copilot. Through this workshop, participants will:
+
+- Set up a Node.js-based RESTful Book API.
+
+- Initialize an MCP server that exposes the Book API functionalities as tools.
+
+- Configure the MCP server to interact via standard input/output (stdio).
+
+- Register tools for listing all books and retrieving books by ID.
+
+- Use GitHub Copilot in Agent mode to discover and invoke these tools interactively.
+
+- Learn how to expose APIs through MCP and test real-time tool invocations using Copilot prompts.
+
+This hands-on workshop is designed to help developers understand the power of combining APIs with LLM agents through MCP, bridging traditional REST services with intelligent developer assistants.
+
+
 ## Prerequisites - Installation
 
 1. Node Js Latest version
